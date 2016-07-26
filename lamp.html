@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Reading through Audio</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+  <body>
+	  <script src="read_along.js"></script>
+	  <script src="main.js"></script>
+
+	<p>
+		<audio id="text_audio" controls>
+			<source src="lamp.mp3" type="audio/mp3">
+			<source src="lamp.wav" type="audio/wav">
+		</audio>
+	</p>
+
+	<p class="audio_unavailable" hidden>
+					<em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3 or WAV audio formats.</em>
+	</p>
+
+	<div id="text">
+		<p>
+		<img src="lamp.png">
+		</p>
+		<p>
+		<span data-dur="0.528" data-begin="0.000">This</span> <span data-dur="0.244" data-begin="0.534" >is</span> <span data-dur="0.164" data-begin="0.852">a</span> <span data-dur="0.489" data-begin="1.041">lamp</span>.
+		</p>
+	 </div>
+  </body>
+</html>
